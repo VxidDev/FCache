@@ -1,0 +1,20 @@
+[project]
+name = "fcache"
+version = "0.1.0"
+description = "A small Python cache cleaner for pacman and AUR helpers"
+authors = [
+    { name = "VxidDev" }
+]
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0"
+]
+
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+fcache = "main:script"
